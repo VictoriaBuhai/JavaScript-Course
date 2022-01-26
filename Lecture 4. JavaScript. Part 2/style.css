@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#result {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1280px;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px;
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid rgb(22, 22, 68);
+  padding: 20px 15px;
+  text-align: center;
+  position: relative;
+}
+
+.card > p {
+  margin-top: 10px;
+}
+.delete-button {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.comments-container {
+  border-top: 3px solid grey;
+  display: none;
+}
+.comment {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+
+.comment:last-of-type {
+  border: none;
+}
+.open {
+  display: block;
+}
+
+.action-button {
+  margin: 10px auto 0;
+}
