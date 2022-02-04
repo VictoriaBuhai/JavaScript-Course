@@ -1,0 +1,26 @@
+.nav {
+  width: 100%;
+  background-color: plum;
+}
+
+.nav-list {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  list-style: none;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}

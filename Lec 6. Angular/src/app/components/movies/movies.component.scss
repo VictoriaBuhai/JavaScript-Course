@@ -1,0 +1,30 @@
+.container {
+  max-width: 1248px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.button {
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 5px;
+  border-radius: 7px;
+  border: 1px solid plum;
+  background-color: white;
+  color: plum;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.empty {
+  height: calc(100vh - 62px);
+  display: flex;
+  align-items: center;
+}
+.input {
+  outline: none;
+  padding: 5px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}

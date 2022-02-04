@@ -1,0 +1,13 @@
+<div *ngIf="movies" class="container">
+  <div *ngFor="let movie of movies">
+    <app-movie
+      [movie]="movie"
+      (clickHandler)="removeFromFavorites($event)"
+    ></app-movie>
+  </div>
+</div>
+<div *ngIf="movies.length === 0" class="container">
+  <div class="empty">
+    <h1>No results was found</h1>
+  </div>
+</div>

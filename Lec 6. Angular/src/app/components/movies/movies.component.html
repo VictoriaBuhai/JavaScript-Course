@@ -1,0 +1,24 @@
+<div class="container">
+  <input
+    value="{{ query }}"
+    placeholder="Search..."
+    (input)="onInputChange($event)"
+    class="input"
+  />
+  <button (click)="searchButtonClick()" class="button">Search</button>
+</div>
+
+<div *ngIf="movies" class="container">
+  <div *ngFor="let movie of movies">
+    <app-movie
+      [movie]="movie"
+      (clickHandler)="toggleFavorite($event)"
+    ></app-movie>
+  </div>
+</div>
+
+<div *ngIf="movies.length === 0" class="container">
+  <div class="empty">
+    <h1>No result was found</h1>
+  </div>
+</div>

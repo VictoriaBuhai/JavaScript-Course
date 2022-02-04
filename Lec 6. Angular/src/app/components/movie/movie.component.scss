@@ -1,0 +1,32 @@
+.card {
+  width: 300px;
+  min-height: 600px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px 10px 20px;
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 100%;
+}
+.container > :not(:first-child) {
+  margin-top: 5px;
+}
+.button {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid palevioletred;
+  background-color: white;
+  color: palevioletred;
+  font-weight: bold;
+  cursor: pointer;
+}
+.image {
+  width: 100%;
+}
